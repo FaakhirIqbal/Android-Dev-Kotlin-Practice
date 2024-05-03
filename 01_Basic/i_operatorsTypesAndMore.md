@@ -21,3 +21,5 @@ By completing this lab, you will gain knowledge and skills in the following area
 ## What we'll do
 
 Will work with the Kotlin REPL to learn and practice the basics of Kotlin.
+
+
