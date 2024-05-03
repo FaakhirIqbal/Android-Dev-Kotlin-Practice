@@ -2,7 +2,7 @@
 
 In this lab, you will learn the basics of the Kotlin programming language, including data types, operators, variables, control structures, and the difference between nullable and non-nullable variables.
 
-## What you should already know
+## What should we already know
 
 Before proceeding, you should be familiar with the following:
 
@@ -11,13 +11,16 @@ Before proceeding, you should be familiar with the following:
 
 ## What you'll learn
 
-By completing this codelab, you will gain knowledge and skills in the following areas:
+By completing this lab, you will gain knowledge and skills in the following areas:
 
 - Using Kotlin data types, operators, and variables.
 - Working with booleans and conditions.
 - Understanding nullable and non-nullable variables.
 - Implementing arrays, lists, and loops in Kotlin.
 
-## What you'll do
+## What we'll do
 
-You will work with the Kotlin REPL to learn and practice the basics of Kotlin.
+Will work with the Kotlin REPL to learn and practice the basics of Kotlin.
+
+
+
