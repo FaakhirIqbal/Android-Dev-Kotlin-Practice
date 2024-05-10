@@ -37,7 +37,7 @@ Will work with the Kotlin REPL to learn and practice the basics of Kotlin.
   println(text)
  ```
 
-### 2. Arithmetic Operations
+### 2. Practice using types (Int, Long, ToByte, etc.)
 ```
 val intValue = 10 // Int
 val longValue = 1000000000000L // Long
