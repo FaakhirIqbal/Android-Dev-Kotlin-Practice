@@ -25,7 +25,7 @@ Will work with the Kotlin REPL to learn and practice the basics of Kotlin.
 
 
 ### 1. Variables and Basic Data Types
-```
+```kotlin
 // Basic Data Types and Variables
   val number = 10
   val decimalNumber = 3.14
@@ -38,7 +38,7 @@ Will work with the Kotlin REPL to learn and practice the basics of Kotlin.
  ```
 
 ### 2. Practice using types (Int, Long, ToByte, etc.)
-```
+```kotlin
 val intValue = 10 // Int
 val longValue = 1000000000000L // Long
 val byteValue: Byte = 5 // Byte
@@ -55,7 +55,7 @@ println(byteValue)
 
 
 ### 3. The value of variable types
-```
+```kotlin
 // Using 'val' to declare variables
 val number = 10
 val text = "Hello"
@@ -89,7 +89,7 @@ println(mutableText)
 
 
 ### 4. Strings and Characters
-```
+```kotlin
 val singleQuoteChar = 'A'
 val doubleQuoteString = "Hello, Kotlin!"
 
