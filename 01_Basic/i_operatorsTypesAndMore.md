@@ -56,6 +56,7 @@ println(byteValue)
 
 ### 3. The value of variable types
 ```
+// Using 'val' to declare variables
 val number = 10
 val text = "Hello"
 
@@ -64,11 +65,27 @@ println(text)
 
 // Uncommenting the line below would result in an error
 // number = 20 // Error: val cannot be reassigned
+
+// Using 'var' to declare variables
+var mutableNumber = 10
+var mutableText = "Hello"
+
+println(mutableNumber)
+println(mutableText)
+// mutableNumber and mutableText are declared using var,
+// so reassigning them (mutableNumber = 20, mutableText = "Hi") is allowed and does not result in an error.
+
+// Reassigning variables declared with 'var' is allowed
+mutableNumber = 20
+mutableText = "Hi"
+
+println(mutableNumber)
+println(mutableText)
+
 ```
-- **number** is assigned an **Int** value of **10**, and text is assigned a **String** value of **"Hello"**.
-- Printing **number** and **text** will display their respective values.
-- If you attempt to reassign **number** to a different value (e.g., **number = 20**), 
-it will result in an error because **val** variables cannot be reassigned.
+- In Kotlin, variables declared with **val** are **immutable**, meaning their values cannot be changed once assigned. They can only be initialized once.
+- In the original **val** example, number and text are declared using **val**, so attempting to reassign them (**number = 20**) results in an error.
+- Variables declared with **var** are **mutable**, meaning their values can be changed after initialization, so (**mutableNumber = 20**, **mutableText = "Hi"**) is allowed.
 
 
 ### 4. Strings and Characters
