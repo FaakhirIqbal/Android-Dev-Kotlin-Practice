@@ -1,2 +1,2 @@
-## Learning Nullability Arrays, Lists and Loops 
+## Learning Nullability, Arrays, Lists and Loops 
 
