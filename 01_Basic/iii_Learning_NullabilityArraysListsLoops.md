@@ -295,5 +295,49 @@ Element at index 2 is GO
 Element at index 3 is C++
 Element at index 4 is Swift
 ```
+### while, do...while, and repeat loops
+Including while, do...while, and repeat loops. Additionally, will explain the increment (++) and decrement (--) operators.
 
+#### 1. while Loop
+The while loop repeatedly executes a block of code as long as a specified condition is true.
+```kotlin
+while (condition) {
+    // Code to execute while condition is true
+}
+```
 
+#### _Example_
+```kotlin
+fun main() {
+    var counter = 5
+    
+    while (counter > 0) {
+        println("Counter: $counter")
+        counter--
+    }
+}
+```
+- **while (condition)**: Checks the condition before executing the block of code.
+- **counter--**: Decrements the counter by 1 on each iteration.
+
+#### 2. do...while Loop
+
+The **do...while** loop is similar to the **while** loop, but it guarantees that the block of code will be executed at least once before the condition is tested.
+```kotlin
+do {
+    // Code to execute at least once and then repeat while condition is true
+} while (condition)
+```
+#### _Example_
+```kotlin
+fun main() {
+    var counter = 5
+    
+    do {
+        println("Counter: $counter")
+        counter--
+    } while (counter > 0)
+}
+```
+- **do { ... } while (condition)**: Executes the block of code once before checking the condition.
+- 
