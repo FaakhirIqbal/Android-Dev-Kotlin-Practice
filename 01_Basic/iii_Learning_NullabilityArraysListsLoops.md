@@ -340,4 +340,50 @@ fun main() {
 }
 ```
 - **do { ... } while (condition)**: Executes the block of code once before checking the condition.
-- 
+
+#### 3. repeat Loop
+
+The **repeat** loop executes a block of code a specified number of times.
+```kotlin
+repeat(times) {
+    // Code to execute
+}
+```
+#### _Example_
+```kotlin
+fun main() {
+    val times = 5
+    repeat(times) { index ->
+        println("This is repetition number ${index + 1}")
+    }
+}
+
+```
+- **repeat(times):** Executes the block of code **times** times.
+- **index:** The current iteration index, starting from 0.
+
+### Increment ('++') and Decrement ('--') Operators
+The increment **('++')** and decrement **('--')** operators are used to increase or decrease a variable's value by 1, respectively.
+
+#### 1. Increment Operator (++)
+- **'var++'**: Post-increment (returns the variable's value before incrementing).
+- **'++var'**: Pre-increment (increments the variable's value before returning it).
+```kotlin
+fun main() {
+    var a = 5
+    println(a++)  // Prints 5, then a becomes 6
+    println(++a)  // a becomes 7, then prints 7
+}
+```
+#### 2. Decrement Operator (--)
+
+- **'var--'**: Post-decrement (returns the variable's value before decrementing).
+- **'--var'**: Pre-decrement (decrements the variable's value before returning it).
+```kotlin
+  fun main() {
+    var b = 5
+    println(b--)  // Prints 5, then b becomes 4
+    println(--b)  // b becomes 3, then prints 3
+}
+
+```
