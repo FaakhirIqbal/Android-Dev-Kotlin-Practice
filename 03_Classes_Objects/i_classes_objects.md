@@ -167,5 +167,76 @@ Grade Year: 12
 
 ## 3. Add class constructors
 
+In this task, you will create a constructor for the `Student` class and work with its properties.
+
+### Step 1: Create a Constructor
+
+In this step, you will add a constructor to the Student class. Previously, every instance of Student was created with the same attributes, and you had to change the attributes after creation. It is simpler to create the object with the correct attributes from the start.
+
+In some programming languages like Java, constructors are defined by creating a method with the same name as the class.
+In Kotlin, you define the constructor directly in the class declaration by specifying the parameters inside parentheses. These parameters can include default values.
 
 
+Update the `Student` class to include three `constructor` parameters with default values and assign them to the corresponding properties.
+
+```Kotlin
+package com.a1schools
+
+class Student(var name: String = "", var age: Int = 0, var marks: Double = 0.0, var gradeYear: Int = 0) {
+    fun printStudentInfo() {
+        println("Name: $name")
+        println("Age: $age")
+        println("Marks: $marks")
+        println("Grade Year: $gradeYear")
+    }
+}
+
+fun createStudent() {
+    val student1 = Student("John Doe", 18, 85.5, 12)
+    student1.printStudentInfo()
+
+    val student2 = Student("Jane Smith", 17)
+    student2.printStudentInfo()
+
+    val student3 = Student(name = "Alice Johnson", gradeYear = 11)
+    student3.printStudentInfo()
+}
+
+fun main() {
+    createStudent()
+}
+```
+
+i. The Student class definition is modified to include constructor parameters directly within the class declaration.
+
+*    The `constructor` parameters are defined inside parentheses after the class name: (var name: String = "", var age: Int = 0, var marks: Double = 0.0, var gradeYear: Int = 0).
+*    Each parameter is declared with a default value using the `=` operator.
+*    The `var` keyword is used to declare the parameters as properties of the class, so they can be accessed and modified directly.
+
+
+ii. Inside the createStudent() function:
+
+*    Three instances of the Student class are created using different variations of the constructor.
+*    `student1` is created by providing values for all constructor parameters: Student("John Doe", 18, 85.5, 12).
+*    `student2` is created by providing values only for the name and age parameters, using the default values for marks and gradeYear: Student("Jane Smith", 17)
+*    `student3` is created by specifying the parameter names explicitly and providing values for name and gradeYear, using the default values for age and marks: Student(name = "Alice Johnson", gradeYear = 11).
+*    The printStudentInfo() method is called on each student instance to print their information.
+
+```
+Name: John Doe
+Age: 18
+Marks: 85.5
+Grade Year: 12
+Name: Jane Smith
+Age: 17
+Marks: 0.0
+Grade Year: 0
+Name: Alice Johnson
+Age: 0
+Marks: 0.0
+Grade Year: 11
+```
+
+
+
+### Step 2: Add init blocks
