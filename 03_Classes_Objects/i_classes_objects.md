@@ -97,6 +97,7 @@ fun main() {
 }
 ```
 
+
 i. The Student class remains the same as before, with its properties defined.
 
 ii. A new function called `createStudent()` is defined outside the Student class.
@@ -141,7 +142,7 @@ fun createStudent() {
 }
 
 fun main() {
-    createStudent()
+    createStudent() //calling function
 }
 ```
 1. Inside the Student class, a new method called `printStudentInfo()` is added.
@@ -162,7 +163,6 @@ Age: 18
 Marks: 85.5
 Grade Year: 12
 ```
-
 
 
 ## 3. Add class constructors
@@ -240,3 +240,5 @@ Grade Year: 11
 
 
 ### Step 2: Add init blocks
+
+
