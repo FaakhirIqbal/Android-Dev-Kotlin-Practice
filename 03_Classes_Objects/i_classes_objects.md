@@ -241,4 +241,52 @@ Grade Year: 11
 
 ### Step 2: Add init blocks
 
+When working with Kotlin, constructors are often used to declare properties and assign values to them. However, if your constructor requires more complex initialization, you can use init blocks. Init blocks allow you to execute additional code during the initialization of your object. Let's see how to add init blocks to a `Student` class.
 
+`Student` class with init blocks:
+
+**First Init Block**: This block will print a message indicating that the object is initializing.
+
+**Second Init Block**: This block will print the value of ClassRoomSpace in NumberOfChairs.
+Remember, init blocks can contain multiple statements, allowing you to perform a range of initialization tasks.
+
+```Kotlin
+package com.a1schools
+
+class Student(var name: String = "", var age: Int = 0, var marks: Double = 0.0, var gradeYear: Int = 0) {
+    val classRoomSpace: String
+    val numberOfChairs: Int
+
+    init {
+        println("Initializing student object...")
+    }
+
+    init {
+        classRoomSpace = "Room A"
+        numberOfChairs = 30
+        println("ClassRoomSpace: $classRoomSpace, NumberOfChairs: $numberOfChairs")
+    }
+
+    fun printStudentInfo() {
+        println("Name: $name")
+        println("Age: $age")
+        println("Marks: $marks")
+        println("Grade Year: $gradeYear")
+    }
+}
+
+fun createStudent() {
+    val student1 = Student("John Doe", 18, 85.5, 12)
+    student1.printStudentInfo()
+
+    val student2 = Student("Jane Smith", 17)
+    student2.printStudentInfo()
+
+    val student3 = Student(name = "Alice Johnson", gradeYear = 11)
+    student3.printStudentInfo()
+}
+
+fun main() {
+    createStudent()
+}
+```
