@@ -248,7 +248,8 @@ When working with Kotlin, constructors are often used to declare properties and 
 **First Init Block**: This block will print a message indicating that the object is initializing.
 
 **Second Init Block**: This block will print the value of ClassRoomSpace in NumberOfChairs.
-Remember, init blocks can contain multiple statements, allowing you to perform a range of initialization tasks.
+
+_Remember_: init blocks can contain multiple statements, allowing you to perform a range of initialization tasks.
 
 ```Kotlin
 package com.a1schools
