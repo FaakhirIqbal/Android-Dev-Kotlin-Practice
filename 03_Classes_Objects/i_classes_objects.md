@@ -388,9 +388,9 @@ class Student(
 
 ```
 
-- The Performance property is changed to a var property, allowing it to be set multiple times.
-- A custom setter is defined for the Performance property using the set() method.
-- Inside the setter, the provided value is assigned to the performance property.
-- Using a custom setter allows you to perform additional logic or validation when setting the property value.
+- The `Performance` property is changed to a `var` property, allowing it to be `set` multiple times.
+- A custom `setter` is defined for the `Performance` property using the `set()` method.
+- Inside the `setter`, the provided value is assigned to the `performance` property.
+- Using a custom `setter` allows you to perform additional logic or validation when setting the property value.
 
 
