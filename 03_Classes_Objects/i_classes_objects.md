@@ -292,6 +292,105 @@ fun main() {
 }
 ```
 
+### Step 3: Adding Secondary Constructor
 
+In Kotlin, in addition to a primary constructor, which can include init blocks, a class can have one or more secondary constructors. Secondary constructors allow constructor overloading, enabling the creation of objects with different initialization parameters.
+
+#### 1. Add a Secondary Constructor:
+
+- Define a secondary constructor using the constructor keyword.
+- This constructor will take the number of activities as its argument.
+
+#### 2. Calculate Performance Property:
+
+- Within the secondary constructor, calculate the `performance` property based on the number of activities.
+
+
+```Kotlin
+    // Secondary constructor taking number of activities as argument
+    constructor(name: String, marks: Int, activities: List<String>) : this(name, marks, activities) {
+        val performance = activities.size
+        println("$name's performance: $performance activities")
+    }
+
+```
+- A secondary constructor is added to the Student class, which takes name, marks, and activities as its arguments.
+- The secondary constructor calls the primary constructor using `this()` with the provided arguments.
+
+
+### Step 4: Add a getter property
+
+In Kotlin, properties are typically accompanied by automatically generated `getters` and `setters`. However, there are cases where you may need to customize the behavior of the `getter`, such as calculating a value or performing additional logic. In this step, you will define a custom `getter` for the Performance property in the `Student` class.
+
+
+1. Define the Performance Property:
+
+- Define a property named Performance in the Student class.
+
+
+2.Define a Custom Getter:
+
+- Define a custom getter for the Performance property using the get() method.
+- Calculate the performance based on the number of activities and return the result.
+
+
+
+```kotlin
+
+class Student(
+    val name: String = "Unknown",
+    val activities: List<String> = listOf()
+) {
+    // Custom getter for the Performance property
+    val Performance: Int
+        get() = activities.size
+}
+
+```
+
+
+- The Performance property represents the performance of a student.
+- A custom getter is defined for this property using the `get()` method.
+- Inside the `getter`, the `size` of the activities list is calculated using the size property.
+- The calculated value represents the `performance` of the `student` class, which is the total number of activities students are involved in.
+
+
+
+### Step 5: Add a setter property 
+
+To enable the 'Performance' property in the `Student` class to be set multiple times, you need to change it from a val (read-only) to a var (read-write) property.
+
+Additionally, you can define a custom setter to handle the setting of the `performance` value.
+
+
+1. Change Performance to a Var Property:
+
+- Modify the Performance property declaration to use the var keyword instead of val.
+
+2. Define a Custom Setter:
+
+- Define a custom `setter` for the Performance property using the `set()` method.
+- Inside the `setter`, assign the provided value to the `performance` property.
+
+
+```Kotlin
+class Student(
+    val name: String = "Unknown",
+    val activities: List<String> = listOf()
+) {
+    // Performance property as var to allow setting
+    var Performance: Int = 0
+        // Custom setter for the Performance property
+        set(value) {
+            field = value // Assign the provided value to the performance property
+        }
+}
+
+```
+
+- The Performance property is changed to a var property, allowing it to be set multiple times.
+- A custom setter is defined for the Performance property using the set() method.
+- Inside the setter, the provided value is assigned to the performance property.
+- Using a custom setter allows you to perform additional logic or validation when setting the property value.
 
 
