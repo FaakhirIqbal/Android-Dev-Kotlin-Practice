@@ -323,12 +323,12 @@ In Kotlin, in addition to a primary constructor, which can include init blocks, 
 In Kotlin, properties are typically accompanied by automatically generated `getters` and `setters`. However, there are cases where you may need to customize the behavior of the `getter`, such as calculating a value or performing additional logic. In this step, you will define a custom `getter` for the Performance property in the `Student` class.
 
 
-1. Define the Performance Property:
+**1. Define the Performance Property:**
 
 - Define a property named Performance in the Student class.
 
 
-2.Define a Custom Getter:
+**2.Define a Custom Getter:**
 
 - Define a custom getter for the Performance property using the get() method.
 - Calculate the performance based on the number of activities and return the result.
@@ -363,11 +363,11 @@ To enable the 'Performance' property in the `Student` class to be set multiple t
 Additionally, you can define a custom setter to handle the setting of the `performance` value.
 
 
-1. Change Performance to a Var Property:
+**1. Change Performance to a Var Property:**
 
 - Modify the Performance property declaration to use the var keyword instead of val.
 
-2. Define a Custom Setter:
+**2. Define a Custom Setter:**
 
 - Define a custom `setter` for the Performance property using the `set()` method.
 - Inside the `setter`, assign the provided value to the `performance` property.
