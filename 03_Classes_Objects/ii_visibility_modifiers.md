@@ -77,3 +77,4 @@ fun main() {
 In this case, the `studentName` property is declared as `var`, so it can be read and written within the `Student` class. However, the setter is marked as `private`, which means the property can only be modified within the class. From outside the class, the `studentName` property can only be read but not modified directly.
 
 Visibility modifiers provide a way to control the accessibility and encapsulation of code elements in Kotlin. They allow you to define the boundaries and restrict access to certain parts of your program, promoting better code organization, maintainability, and security.
+
