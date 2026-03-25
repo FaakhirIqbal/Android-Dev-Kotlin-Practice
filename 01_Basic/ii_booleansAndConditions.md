@@ -70,5 +70,18 @@ when (x) {
     else -> println("x is neither 1 nor 2")
 }
 
+
+/*
+Which Kotlin construct evaluates conditions as expressions and returns values?
+
+a) when expression
+b) if-else blocks only
+c) for loop
+d) break statement
+
+Answer: A) when Expression
+
+*/
+
 ```
 
